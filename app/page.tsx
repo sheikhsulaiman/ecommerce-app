@@ -19,6 +19,8 @@ interface Props {
   }
 }
 
+export const dynamic = "force-dynamic"
+
 export default async function Page({ searchParams }: Props) {
   const { price, date = "desc", color, category, size, search } = searchParams
   const priceOrder = price ? `| order(price ${price})` : ""

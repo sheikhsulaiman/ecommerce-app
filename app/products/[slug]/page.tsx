@@ -11,6 +11,8 @@ interface Props {
   }
 }
 
+export const dynamic = "force-dynamic"
+
 export default async function Page({ params }: Props) {
   const product = await client.fetch(
     groq`*[_type == "product" && slug.current == "${params.slug}"][0] {

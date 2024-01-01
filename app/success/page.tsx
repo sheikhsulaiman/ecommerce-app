@@ -9,6 +9,8 @@ interface Props {
   }
 }
 
+export const dynamic = "force-dynamic"
+
 export default async function Page({ searchParams }: Props) {
   const sessionId = searchParams?.session_id ?? ""
   const checkoutSession = await stripe.checkout.sessions.retrieve(sessionId)

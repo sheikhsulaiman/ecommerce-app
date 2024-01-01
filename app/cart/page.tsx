@@ -1,6 +1,8 @@
 import { CartItems } from "@/components/cart-items"
 import { CartSummary } from "@/components/cart-summary"
 
+export const dynamic = "force-dynamic"
+
 export default function Page() {
   return (
     <div>
