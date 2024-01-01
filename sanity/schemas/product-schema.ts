@@ -37,7 +37,7 @@ export const product = defineType({
       of: [{ type: "string" }],
     },
     {
-      name: "Colors",
+      name: "colors",
       title: "Colors",
       type: "array",
       of: [{ type: "string" }],
